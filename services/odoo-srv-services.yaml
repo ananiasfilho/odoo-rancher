@@ -6,6 +6,7 @@ metadata:
     app: odoo-svr
     tier: frontend
 spec:
+  type: NodePort
   ports:
     - port: 8069
   selector:

@@ -4,10 +4,13 @@ metadata:
   name: odoo-db
   labels:
     app: odoo-db
+    role: master
+    tier: backend
 spec:
   ports:
     - port: 5432
+      targetPort: 5432
   selector:
     app: odoo-db
     tier: backend
-  type: NodePort
+    role: master
