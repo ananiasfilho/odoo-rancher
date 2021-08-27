@@ -8,7 +8,6 @@ metadata:
 spec:
   ports:
     - port: 8069
-    - port: 8072
   selector:
     app: odoo-svr
     tier: frontend
