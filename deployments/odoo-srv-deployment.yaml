@@ -40,3 +40,4 @@ spec:
 
         ports:
         - containerPort: 8069
+        - containerPort: 8072
