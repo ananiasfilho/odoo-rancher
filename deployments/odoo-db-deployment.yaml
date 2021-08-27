@@ -4,7 +4,6 @@ kind: Deployment
 metadata:
   name: odoo-db
 spec:
-  strategy: Recreate
   selector:
     matchLabels:
       app: odoo-db
