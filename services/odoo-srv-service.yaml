@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: odoo-srv
+  labels:
+    app: odoo-srv
+spec:
+  ports:
+  - port: 8069
+  - port: 8072
+  selector:
+    app: odoo-srv

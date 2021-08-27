@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: odoo-svr
+  labels:
+    app: odoo-svr
+    tier: frontend
+spec:
+  ports:
+    - port: 8069
+    - port: 8072
+  selector:
+    app: odoo-svr
+    tier: frontend
+  type: NodePort
