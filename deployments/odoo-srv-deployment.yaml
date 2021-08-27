@@ -18,12 +18,14 @@ spec:
       - name: odoo-srv
         image: kmee/kmee-odoo-project_odoo:latest
         env:
-        - name: HOST
+        - name: DB_HOST
           value: odoo-db
-        - name: USER
+        - name: DB_USER
           value: odoo
-        - name: PASSWORD
+        - name: DB_PASSWORD
           value: password
+        - name: DB_NAME
+          value: odoo
         resources:
           requests:
             cpu: 100m
